@@ -1,13 +1,13 @@
 exports.config = {
-  namespace: 'mycomponent',
-  outputTargets:[
-    { 
-      type: 'dist' 
-    },
-    { 
-      type: 'www',
-      serviceWorker: false
-    }
+    bundles: [ 
+      { components: ['my-component'] },
+      { components: ['my-list'] },
+      { components: ['my-list-details'] }
+],
+      	
+
+    collections:[
+    { name: '@stencil/router' }
   ]
 };
 
