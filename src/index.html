@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
+  <title>FORM Stencil Component</title>
   <script src="/build/mycomponent.js"></script>
+  <link rel="stylesheet" href="components/my-component/my-component.css">
+  <link rel="stylesheet" href="components/my-component/my-component.tsx">
 
 </head>
 <body>
 
   <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+
+  <section class="message-form">
+    
+    <form class="form" action="#">
+       
+        <input type="text" class="cell" placeholder="Username" data-valid="required">
+        <input type="password" class="cell" placeholder="Password" data-valid="required">
+        <button type="submit" class="button button-act">Submit</button>
+      
+    </form>
+
+</section><!-- message-form END -->
+
+  <script type="text/javascript">
+  	
+  	var username = 'Test';
+  	var password = 'password';
+  	var usernameAnswer = '';
+  	var passwordAnswer = '';
+
+  	console.log(username === usernameAnswer);
+  	console.log(password === passwordAnswer);
+
+  	
+
+  </script>
 
 </body>
 </html>

@@ -1,0 +1,25 @@
+.list{
+	list-style:square;
+	background: #f2f2f2;
+    padding: 100px 100px;
+    margin: 100px auto;
+    width: 1024px; 
+
+}
+
+.list__item{
+	line-height:1.9;
+
+}
+
+.list__link{
+	text-decoration:none;
+	color:black;
+	font-size: 20px;
+	/*display: block;*/
+}
+
+.list__link:hover{
+	text-decoration:underline;
+	color: rgba(0,0,0,0.6);
+}
